@@ -29,13 +29,11 @@ int main()
 	std::chrono::duration<double, std::milli> elapsed_time1 = end_time_insertion - start_time_insertion;
 	cout << "Elapsed Time for Insertion Sort: " << elapsed_time1.count() << endl;
 
-
 	// print sorted A.
 	cout << "SORTED WITH INSERTION SORT" << endl;
 	for (auto dummy : A) {
 		cout << dummy << endl;
 	}
-
 
 	// sort array with merge sort.
 	start_time_merge = std::chrono::high_resolution_clock::now();
@@ -43,7 +41,6 @@ int main()
 	end_time_merge = std::chrono::high_resolution_clock::now();
 	std::chrono::duration<double, std::milli> elapsed_time2 = end_time_merge - start_time_merge;
 	cout << "Elapsed Time for Merge Sort: " << elapsed_time2.count() << endl;
-
 
 	// print sorted B.
 	cout << "SORTED WITH MERGE SORT" << endl;
@@ -78,8 +75,6 @@ void insertion_sort(int sort_this_array[], int input_array_size) {
 		} */
 
 	}
-
-
 }
 
 void merge_sort(int A[], int l, int h) {
