@@ -12,7 +12,7 @@ int main()
 {
 	// define clocks.
 	std::chrono::high_resolution_clock::time_point start_time_merge, end_time_merge, start_time_insertion, end_time_insertion;
-
+	 
 	// input array specs.
 	int A[10]{ 0 };
 	int B[10]{ 0 };
